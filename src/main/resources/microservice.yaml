@@ -1,7 +1,7 @@
-APPLICATION_ID: pojotest
+APPLICATION_ID: acmeair
 service_description:
-  name: huaweiairorderservice
-  version: 0.0.1
+  name: OrderService
+  version: 0.0.2
 cse:
   service:
     registry:
@@ -21,4 +21,4 @@ cse:
   handler:
     chain:
       Provider:
-        default: bizkeeper-provider,perf-stats,tracing-provider,sla-provider
+        default: bizkeeper-provider,perf-stats,tracing-provider,sla-provider, qps-flowcontrol-provider

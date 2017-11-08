@@ -21,7 +21,7 @@ public class OrderDelegate{
     public Boolean createOrders(FlightFlag order){
 
         // Do Some Magic Here!
-        return delegateImpl.createOrders(order, "ZhouJW");
+        return delegateImpl.createOrders(order, "");
     };
 
 
